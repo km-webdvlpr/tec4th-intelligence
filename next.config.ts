@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const isProduction = process.env.NODE_ENV === "production";
-const repoName = "kopano-intelligence";
+const repoName = "tec4th-intelligence";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
