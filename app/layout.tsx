@@ -1,59 +1,59 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, IBM_Plex_Sans } from "next/font/google";
-import type { ReactNode } from "react";
-import "./globals.css";
+import { Bebas_Neue, IBM_Plex_Mono, Lora } from "next/font/google";
+
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { brand } from "@/lib/site-content";
 
-const display = Cormorant_Garamond({
+import "./globals.css";
+
+const display = Bebas_Neue({
   subsets: ["latin"],
   variable: "--font-display",
-  weight: ["500", "600", "700"],
+  weight: "400",
 });
 
-const body = IBM_Plex_Sans({
+const body = Lora({
   subsets: ["latin"],
   variable: "--font-body",
-  weight: ["400", "500", "600", "700"],
 });
 
+const mono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
+  weight: ["400", "500"],
+});
+
+const siteUrl =
+  process.env.NODE_ENV === "production"
+    ? "https://km-webdvlpr.github.io/tec4th-intelligence"
+    : "http://localhost:3000";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: {
-    default: `${brand.name} | ${brand.strapline}`,
-    template: `%s | ${brand.name}`,
+    default: "Tec4th | Bespoke Business Systems",
+    template: "%s | Tec4th",
   },
   description:
-    "Tec4th builds bespoke business systems, workflow tools, dashboards, and admin platforms for businesses that have outgrown spreadsheets.",
-  metadataBase: new URL(brand.siteUrl),
-  openGraph: {
-    title: brand.name,
-    description:
-      "Bespoke business systems without enterprise overhead.",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: brand.name,
-    description:
-      "Custom workflow, admin, and reporting systems for practical operators.",
-  },
+    "Bespoke workflow, admin, and reporting systems for businesses that have outgrown spreadsheets.",
   icons: {
-    icon: "/favicon.svg",
+    icon: `${siteUrl}/favicon.svg`,
   },
 };
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: ReactNode;
+  children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${display.variable} ${body.variable}`}>
-      <body className="font-[var(--font-body)] text-[15px] leading-7 sm:text-base">
-        <SiteHeader />
-        <main>{children}</main>
-        <SiteFooter />
+    <html className={`${display.variable} ${body.variable} ${mono.variable}`} lang="en">
+      <body>
+        <div className="site-frame">
+          <SiteHeader />
+          <main className="site-main">{children}</main>
+          <SiteFooter />
+        </div>
       </body>
     </html>
   );

@@ -1,19 +1,19 @@
-export function SectionHeading({
-  eyebrow,
-  title,
-  description,
-}: {
-  eyebrow: string;
+type SectionHeadingProps = {
+  label: string;
   title: string;
-  description: string;
-}) {
+  intro?: string;
+};
+
+export function SectionHeading({
+  label,
+  title,
+  intro,
+}: SectionHeadingProps) {
   return (
-    <div className="max-w-3xl">
-      <p className="eyebrow">{eyebrow}</p>
-      <h2 className="mt-3 text-balance font-[var(--font-display)] text-4xl font-semibold sm:text-5xl">
-        {title}
-      </h2>
-      <p className="mt-4 text-dusk">{description}</p>
+    <div className="section-heading">
+      <p className="section-label">{label}</p>
+      <h2 className="section-title">{title}</h2>
+      {intro ? <p className="section-intro">{intro}</p> : null}
     </div>
   );
 }
