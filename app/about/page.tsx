@@ -12,14 +12,14 @@ export default function AboutPage() {
   return (
     <>
       <PageHero
-        intro="Tec4th is a Johannesburg-based systems build practice shaped around the idea that bespoke platforms should feel grounded, direct, and useful."
+        intro="Tec4th is a Johannesburg-based systems build practice shaped around the idea that bespoke platforms should feel grounded, durable, and useful."
         label="ABOUT"
         notes={[
-          "FOUNDER-LED",
+          "SYSTEMS BUILDER",
           "JOHANNESBURG-BASED",
-          "ANALYST + DEVELOPER",
+          "LONG-RUN THINKING",
         ]}
-        title="A founder-led build practice for businesses that need the system built, not just described."
+        title="A systems build practice for businesses that need the system built, not just described."
       />
 
       <section className="shell section">
@@ -38,13 +38,12 @@ export default function AboutPage() {
 
           <div className="about-copy">
             <p>
-              Tec4th is run by Kabelo Makua &mdash; a Johannesburg-based product
-              analyst and systems builder with a background in business
-              analysis, product analytics, and operational software delivery.
-              The work is grounded in a simple conviction: practical operators
-              deserve systems that were actually designed for the way their
-              business moves. Not off-the-shelf. Not enterprise overhead. Just
-              a working platform, scoped and shipped.
+              Tec4th is run by Kabelo Makua &mdash; a Johannesburg-based
+              systems builder with a background in business analysis, product
+              analytics, and operational software delivery. The work is not
+              framed around founder theatre. The standard is simpler: build a
+              system the business can actually keep using. Clear roles. Clear
+              visibility. A platform that still makes sense a year later.
             </p>
           </div>
         </div>
