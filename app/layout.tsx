@@ -3,6 +3,7 @@ import { Bebas_Neue, IBM_Plex_Mono, Lora } from "next/font/google";
 
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { siteDescription } from "@/lib/site-data";
 
 import "./globals.css";
 
@@ -31,11 +32,10 @@ const siteUrl =
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Tec4th | Bespoke Business Systems",
+    default: "Tec4th | Bespoke Operations Platforms",
     template: "%s | Tec4th",
   },
-  description:
-    "Bespoke workflow, admin, and reporting systems for businesses that have outgrown spreadsheets.",
+  description: siteDescription,
   icons: {
     icon: `${siteUrl}/favicon.svg`,
   },

@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import { SectionHeading } from "@/components/section-heading";
-import { capabilityStrip, whyTec4th } from "@/lib/site-data";
+import { capabilityStrip, platformLayers, whyTec4th } from "@/lib/site-data";
 
 export default function HomePage() {
   return (
@@ -14,8 +14,9 @@ export default function HomePage() {
               BESPOKE BUSINESS SYSTEMS. WITHOUT ENTERPRISE OVERHEAD.
             </h1>
             <p className="hero-copy">
-              Custom workflow, admin, and reporting systems for businesses
-              that have outgrown spreadsheets.
+              We build live, web-based operations platforms for service
+              businesses &mdash; booking, workflow, oversight, and reporting in
+              one system your whole team can use.
             </p>
             <div className="button-row">
               <Link className="button button-primary" href="/contact">
@@ -47,7 +48,36 @@ export default function HomePage() {
             </div>
           </aside>
         </div>
+      </section>
 
+      <section className="shell section">
+        <div className="platform-panel">
+          <div className="platform-heading">
+            <p className="section-label">PLATFORM SHAPE</p>
+            <p className="platform-intro">
+              Each system Tec4th builds follows the same structure: one
+              platform, multiple roles, visible from every level of the
+              business.
+            </p>
+          </div>
+
+          <div className="platform-grid">
+            {platformLayers.map((layer) => (
+              <article className="platform-card" key={layer.title}>
+                <h2>{layer.title}</h2>
+                <p>{layer.copy}</p>
+              </article>
+            ))}
+          </div>
+
+          <p className="platform-note">
+            Built as a live web application. Accessible from any device. No
+            installation required.
+          </p>
+        </div>
+      </section>
+
+      <section className="shell section">
         <div className="capability-grid">
           {capabilityStrip.map((item) => (
             <article className="capability-card" key={item.title}>
@@ -63,7 +93,7 @@ export default function HomePage() {
         <SectionHeading
           intro="Four reasons the work is framed the way it is: clear scope, grounded delivery, and systems built around the business rather than borrowed software categories."
           label="WHY TEC4TH"
-          title="A consultancy shape that keeps the work close to the actual problem."
+          title="A build model that keeps the work close to the actual operation."
         />
 
         <div className="value-grid">
@@ -80,7 +110,7 @@ export default function HomePage() {
         <div className="signal-quote">
           <p className="quote-label">CLIENT SIGNAL</p>
           <blockquote>
-            “This feels like someone who can actually build the system.”
+            &ldquo;This feels like someone who can actually build the system.&rdquo;
           </blockquote>
         </div>
       </section>

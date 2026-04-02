@@ -1,5 +1,7 @@
 export const contactEmail = "kabelomakua@tec4th.co.za";
 export const locationLabel = "Johannesburg, South Africa";
+export const siteDescription =
+  "We build live, web-based operations platforms for service businesses - booking, workflow, oversight, and reporting in one system your whole team can use.";
 
 export const navigation = [
   { label: "HOME", href: "/" },
@@ -32,6 +34,29 @@ export const capabilityStrip = [
   },
 ];
 
+export const platformLayers = [
+  {
+    title: "CUSTOMER OR CLIENT LAYER",
+    copy:
+      "A clean, public-facing interface for bookings, requests, or submissions.",
+  },
+  {
+    title: "STAFF OR FIELD LAYER",
+    copy:
+      "A working view for the people doing the service - their queue, their actions, their day.",
+  },
+  {
+    title: "MANAGER LAYER",
+    copy:
+      "Ops visibility, reassignment controls, and status oversight across the team.",
+  },
+  {
+    title: "EXECUTIVE LAYER",
+    copy:
+      "KPI dashboards, performance trends, and exports for leadership without manual reporting.",
+  },
+];
+
 export const whyTec4th = [
   {
     title: "Built Around Real Work",
@@ -51,7 +76,7 @@ export const whyTec4th = [
   {
     title: "Closer To The Build",
     copy:
-      "Tec4th is a one-person consultancy, so the same person who frames the system is also responsible for shipping it.",
+      "Tec4th is a one-person build practice, so the same person who frames the system is also responsible for shipping it.",
   },
 ];
 
@@ -61,9 +86,9 @@ export const services = [
     summary:
       "Bespoke systems for the operator side of the business when spreadsheets and inbox threads have stopped being enough.",
     scope: [
-      "workflow mapping and task flow",
-      "approvals, statuses, and handoffs",
-      "structured records and operating views",
+      "Customer or client-facing booking and submission layer",
+      "Staff workflow view - queue, status, and daily actions",
+      "Manager controls - reassignment, escalation, ops view",
     ],
     ctaLabel: "Discuss a system",
     ctaHref: "/contact",
@@ -73,9 +98,9 @@ export const services = [
     summary:
       "Reporting layers that make operations legible for owners and managers who need to see what is moving and what is stuck.",
     scope: [
-      "owner dashboards and reporting views",
-      "spreadsheet replacement reporting layers",
-      "data capture shaped around decisions",
+      "Live KPI dashboard for owners and leadership",
+      "Daily, weekly, and trend views without manual compiling",
+      "CSV or data export for deeper analysis when needed",
     ],
     ctaLabel: "See the proof",
     ctaHref: "/proof",
@@ -85,9 +110,9 @@ export const services = [
     summary:
       "Portals and admin surfaces that cut duplicate admin, organise communication, and create one place for the work to live.",
     scope: [
-      "client-facing access and submission flows",
-      "internal admin panels and control surfaces",
-      "status visibility and document handling",
+      "Role-based login - different access for every level",
+      "Admin panel for records, approvals, and status tracking",
+      "One platform instead of scattered sheets and inboxes",
     ],
     ctaLabel: "See who it's for",
     ctaHref: "/who-its-for",
@@ -100,36 +125,36 @@ export const clientProfiles = [
     pain:
       "Appointments, staff coordination, follow-ups, stock notes, and client records start living in too many places at once.",
     build:
-      "Tec4th builds salon workflow systems that keep bookings, client detail, admin flow, and visibility in one working structure.",
+      "Tec4th builds salon workflow systems that keep bookings, client detail, admin flow, and visibility in one working structure. The platform gives customers online booking, staff their daily queue, and the owner a live view of the floor.",
   },
   {
     title: "Training Businesses",
     pain:
       "Learner admin, scheduling, progress tracking, attendance, and reporting become difficult to manage across spreadsheet chains.",
     build:
-      "Tec4th builds training operations systems for intake, scheduling, records, progress views, and reporting that supports delivery.",
+      "Tec4th builds training operations systems for intake, scheduling, records, progress views, and reporting that supports delivery. The platform gives learners a submission or intake layer, coordinators a cohort view, and leadership an attendance and progress dashboard.",
   },
   {
     title: "Service Operators",
     pain:
       "Quotes, jobs, recurring work, field updates, and owner visibility get buried between WhatsApp, email, and manual sheets.",
     build:
-      "Tec4th builds service workflows that connect intake, task progress, handoffs, and reporting without forcing enterprise software on the team.",
+      "Tec4th builds service workflows that connect intake, task progress, handoffs, and reporting without forcing enterprise software on the team. The platform gives clients a job request layer, field staff their task queue, and the owner real-time job status without chasing updates.",
   },
   {
     title: "Admin-Heavy Teams",
     pain:
       "The team spends too much time re-entering the same information, chasing status updates, and rebuilding reports by hand.",
     build:
-      "Tec4th builds admin systems and portals that reduce repetition, structure records properly, and make the work easier to see.",
+      "Tec4th builds admin systems and portals that reduce repetition, structure records properly, and make the work easier to see. The platform replaces scattered sheets with structured records, role-based access, and a management view that updates itself.",
   },
 ];
 
 export const proofPoints = [
-  "Shows how Tec4th scopes a bespoke system around real operator routines rather than generic software categories.",
-  "Demonstrates an admin-first approach where workflow, record structure, and visibility are designed together.",
-  "Represents shipped custom work, not a concept screen or template dressed up as delivery.",
-  "Acts as the first visible proof point for a growing body of Johannesburg-built systems work.",
+  "Multi-location booking system with customer-facing online access and real-time slot availability",
+  "Staff workflow layer: consultants manage their own queue, check-ins, service status, and escalations",
+  "Manager and area oversight: cross-location ops view, reassignment controls, no-show and cancellation tracking",
+  "Executive dashboard: KPI snapshot, throughput, completion rates, and filtered data exports",
 ];
 
 export const proofPlaceholders = [
@@ -195,5 +220,23 @@ export const brandValues = [
     title: "Ship What Works",
     copy:
       "The goal is a working system people can use, then extend with confidence once the foundation is right.",
+  },
+];
+
+export const contactProcess = [
+  {
+    title: "ONE SCOPING CALL",
+    copy:
+      "Bring the problem. We map the workflow and agree what the system needs to do.",
+  },
+  {
+    title: "FIXED SCOPE AND COST",
+    copy:
+      "You receive a clear build plan, timeline, and fixed price. No open-ended retainers.",
+  },
+  {
+    title: "WORKING PLATFORM IN 6-10 WEEKS",
+    copy:
+      "A live, web-based system your team can use from day one. Phased delivery available.",
   },
 ];

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 import { ContactForm } from "@/components/contact-form";
 import { PageHero } from "@/components/page-hero";
-import { contactEmail, locationLabel } from "@/lib/site-data";
+import { contactEmail, contactProcess, locationLabel } from "@/lib/site-data";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -23,6 +23,19 @@ export default function ContactPage() {
       />
 
       <section className="shell section">
+        <div className="contact-process">
+          <p className="section-label">HOW IT STARTS</p>
+          <div className="process-strip-grid">
+            {contactProcess.map((step, index) => (
+              <article className="process-strip-card" key={step.title}>
+                <p className="card-eyebrow">STEP {index + 1}</p>
+                <h2>{step.title}</h2>
+                <p>{step.copy}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+
         <div className="contact-grid">
           <div className="contact-card">
             <p className="section-label">EMAIL</p>

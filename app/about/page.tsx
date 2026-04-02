@@ -12,43 +12,39 @@ export default function AboutPage() {
   return (
     <>
       <PageHero
-        intro="Tec4th is a Johannesburg-based consultancy practice built around the idea that bespoke systems should feel grounded, direct, and useful."
+        intro="Tec4th is a Johannesburg-based systems build practice shaped around the idea that bespoke platforms should feel grounded, direct, and useful."
         label="ABOUT"
         notes={[
           "FOUNDER-LED",
           "JOHANNESBURG-BASED",
           "ANALYST + DEVELOPER",
         ]}
-        title="A one-person consultancy for businesses that need the system built, not just described."
+        title="A founder-led build practice for businesses that need the system built, not just described."
       />
 
       <section className="shell section">
         <SectionHeading
-          intro="The tone stays grounded on purpose. The work is serious, practical, and close to the businesses it is made for."
-          label="FOUNDER"
-          title="Kabelo Makua"
+          label="THE BUILDER"
+          title={"Kabelo Makua \u2014 Johannesburg"}
         />
 
         <div className="about-grid">
-          <div className="portrait-card">
-            <div className="portrait-placeholder" aria-hidden="true">
-              <span>KM</span>
+          <div className="portrait-card builder-photo-card">
+            <div className="portrait-placeholder builder-placeholder" aria-hidden="true">
+              <span>[headshot]</span>
             </div>
-            <p className="portrait-caption">Headshot placeholder</p>
+            <p className="portrait-caption">[headshot]</p>
           </div>
 
           <div className="about-copy">
             <p>
-              I&apos;m Kabelo Makua, a Johannesburg-based analyst and developer
-              with a background in product analytics and business systems.
-              Tec4th exists for operators who can feel the business outgrowing
-              spreadsheets, but do not need enterprise theatre to solve the
-              problem.
-            </p>
-            <p>
-              The work is hands-on from discovery through shipping. That means
-              the system is shaped around the real workflow, the admin pressure
-              points, and the reporting the business actually needs to see.
+              Tec4th is run by Kabelo Makua &mdash; a Johannesburg-based product
+              analyst and systems builder with a background in business
+              analysis, product analytics, and operational software delivery.
+              The work is grounded in a simple conviction: practical operators
+              deserve systems that were actually designed for the way their
+              business moves. Not off-the-shelf. Not enterprise overhead. Just
+              a working platform, scoped and shipped.
             </p>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { contactEmail, locationLabel } from "@/lib/site-data";
+import { contactEmail, locationLabel, siteDescription } from "@/lib/site-data";
 
 export function SiteFooter() {
   return (
@@ -8,10 +8,7 @@ export function SiteFooter() {
       <div className="shell footer-grid">
         <div>
           <p className="footer-mark">TEC4TH</p>
-          <p className="footer-copy">
-            Bespoke workflow, admin, and reporting systems for businesses
-            that have outgrown spreadsheets.
-          </p>
+          <p className="footer-copy">{siteDescription}</p>
         </div>
         <div className="footer-meta">
           <a href={`mailto:${contactEmail}`}>{contactEmail}</a>
